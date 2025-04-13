@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="index.js" type="module" defer></script>
+    <link href="styles.css" rel="stylesheet" />
 </head>
-<body>
-    <h1>Hello, world!</h1>
-</body>
+  <body>
+    <h1>Battleship</h1>
+    <div class="boards">
+      <div>
+        <h2>Your Board</h2>
+        <div id="player-board" class="board"></div>
+      </div>
+      <div>
+        <h2>Enemy Board</h2>
+        <div id="computer-board" class="board"></div>
+      </div>
+    </div>
+
+    <div class="controls">
+        <button id="auto-place">Auto Place Ships</button>
+        <button id="start-game">Start Game</button>
+    </div>
+
+    <p id="status"></p>
+
+  </body>
 </html>
